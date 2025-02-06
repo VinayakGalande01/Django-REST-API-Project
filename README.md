@@ -38,7 +38,7 @@ This project is a Django-based application designed to manage company informatio
 ### 1️⃣ Clone the Repository
 ```bash
 # Replace with your GitHub repository URL
-git clone https://github.com/your-username/company-management.git
+git clone https://github.com/VinayakGalande01/company-management.git
 cd company-management
 ```
 
