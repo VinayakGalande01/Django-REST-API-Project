@@ -1,3 +1,4 @@
+# Import Django REST framework's serializer module for API serialization
 from rest_framework import serializers
 from api.models import Company,Employee # Ensure this import exists
 
