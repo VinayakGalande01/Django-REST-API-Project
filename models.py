@@ -1,3 +1,4 @@
+# Import Django's model module to define database models
 from django.db import models
 
 # Company Model
