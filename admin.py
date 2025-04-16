@@ -20,14 +20,7 @@ class EmployeeAdmin(admin.ModelAdmin):
  # Custom method to display the location of the employee’s company
       def get_location(self, obj):
         return obj.company.location  # Fetch location from related Company
-      get_location.short_description = 'Location'  # Column name in admin panel
-# Dynamically adds filters for the employee list based on unique companies   
-      def get_list_filter(self, request):
-         # Retrieves a distinct list of company names from the Employee model
-        unique_companies = Employee.objects.values_list('company__name', flat=True).distinct()
-        # Adds a filter for companies if there are any unique companies available
-        return [('company', admin.RelatedOnlyFieldListFilter)] if unique_companies else []
-
+     
 # Registers the Company model with the custom admin configuration    
 admin.site.register(Company,CompanyAdmin)
 
